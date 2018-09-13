@@ -1,0 +1,1 @@
+# sciter-go-boilerplate
