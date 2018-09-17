@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-
 	"github.com/sciter-sdk/go-sciter"
 	"github.com/sciter-sdk/go-sciter/window"
 )
@@ -12,10 +11,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// log.Printf("handle: %v", w.Handle)
-	// w.LoadFile("index.html")
 	w.LoadHtml(GetRenderHTML(), "/")
-	w.SetTitle("Example")
 	w.Show()
 	w.Run()
 }

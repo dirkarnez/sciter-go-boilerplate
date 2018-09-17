@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { inlineSource } = require('inline-source');
 
-inlineSource("htdocs.html", {
+inlineSource("index.html", {
     compress: true,
     rootpath: "./",
   }).then(html => {
@@ -10,7 +10,7 @@ inlineSource("htdocs.html", {
     
     func GetRenderHTML() string {
         return \`` + 
-        html.replace(/\\([\s\S])|(")/g,"\\$1$2") + 
+        html + 
         `\`
     }
     `);
